@@ -25,7 +25,7 @@
             </div>
             <div class="control-group">
                 <div class="controls">
-                    <button name="edit" type="submit" class="btn btn-success"><i class="icon-save icon-large"></i>&nbsp;Update</button>
+                    <button name="edit" type="submit" class="btn btn-success"><i class="fas fa-save fa-lg"></i>&nbsp;Update</button>
                 </div>
             </div>
         </form>
@@ -37,7 +37,7 @@
 
 <?php
 if (isset($_POST['edit'])) {
-
+    var_dump($service, $user_id, $price);
     $user_id = $_POST['id'];
     $service = $_POST['service'];
     $price = $_POST['price'];

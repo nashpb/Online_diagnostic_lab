@@ -2,21 +2,19 @@
     <div class="navbar-inner">
         <div class="pull-right">
             <ul class="nav">
-                <li><a href="#"><div class="icon_size"><i class="icon-user icon-large"></i>&nbsp;&nbsp;Hi Admin</div></a></li>
+                <li><a href="#"><div class="icon_size"><i class="fas fa-user fa-lg"></i>&nbsp;&nbsp;Hi Admin</div></a></li>
                 <li class="divider-vertical"></li>
-                <li><a href="dasboard.php"><div class="icon_size"><i class="icon-home icon-large"></i></div></a></li>
+                <li><a href="dasboard.php"><div class="icon_size"><i class="fa fa-home fa-lg"></i></div></a></li>
                 <li class="divider-vertical"></li>
                 <li>
 
                     <div class="btn-group">
                         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="icon-cog icon-large"></i>
+                            <i class="fas fa-cog fa-lg"></i>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#myModal" data-toggle="modal"><i class="icon-signout icon-large"></i>&nbsp;Logout</a></li>
-
-
+                            <li><a href="#myModal" data-toggle="modal"><i class="fas fa-sign-out-alt fa-lg"></i>&nbsp;Logout</a></li>
                         </ul>
                     </div>
                     </div>

@@ -1,8 +1,3 @@
-<img src="img/dr.jpg">
-<div class="login_sign_up">
-    <a rel="tooltip"  data-placement="left" title="Click Here to Login" id="login" href="login.php"  class="btn btn-info btn-large"><i class="icon-signin icon-large"></i>&nbsp;Login</a>
-    <p><a rel="tooltip"  data-placement="bottom" title="Click Here to Sign UP" id="signup" href="signup.php">Not a Member? Sign Up Now</a></p>
-</div>
 <div id="myCarousel" class="carousel slide">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -13,10 +8,22 @@
     <div class="carousel-inner">
         <div class="active item">
             <img src="img/slide.jpg">
-            <div class="carousel-caption"><h3>Schedule Your Appointment Online</h3></div>
+            <div class="carousel-caption">
+                <h3>Schedule Your Appointment Online</h3>
+            </div>
         </div>
-        <div class="item">…</div>
-        <div class="item">…</div>
+        <div class="item">
+            <img src="img/slide2.png">
+            <div class="carousel-caption">
+                <h3>Schedule Your Appointment Online</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/slide3.png">
+            <div class="carousel-caption">
+                <h3>Schedule Your Appointment Online</h3>
+            </div>
+        </div>
     </div>
     <!-- Carousel nav -->
     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>

@@ -7,11 +7,11 @@
             <?php include('sidebar.php'); ?>
         </div>
         <div class="span9">
-            <img src="../img/dr.jpg" class="img-rounded">
+            
             <?php include('navbar_dasboard.php') ?>
             <div class="alert alert-info">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong><i class="icon-user icon-large"></i>&nbsp;Service Table</strong>
+                <strong><i class="fas fa-user fa-lg"></i>&nbsp;Service Table</strong>
             </div>
             <!-- form sort -->
             <form method="POST" action="sort_date.php">
@@ -60,13 +60,12 @@
                                 <td><?php echo $member_row['firstname'] . " " . $member_row['lastname']; ?></td>
                                 <td><?php echo $row['date']; ?></td>
                                 <td><?php echo $service_row['service_offer']; ?></td>
-                                <td><?php echo $service_row['price']; ?></td>
+                                <td><?php echo $row['price']; ?></td>
                                 <td width="100">
                                     <a href="#delete<?php echo $id ?>" data-toggle="modal" rel="tooltip"  title="Delete" id="<?php echo $id; ?>" class="btn btn-danger"><i class="icon-trash icon-large"></i></a>
                                     <?php include('delete_schedule.php'); ?>
                                     <a rel="tooltip"  title="Edit" id="e<?php echo $id; ?>" href="#edit<?php echo $id; ?>" data-toggle="modal" class="btn btn-success"><i class="icon-pencil icon-large"></i></a>
-                                        <?php include('edit_service.php'); ?>
-                                
+                                        <?php include('edit_schedule.php'); ?>
                                 <?php include('toolttip_edit_delete.php'); ?>
                             </td>
                             </tr>

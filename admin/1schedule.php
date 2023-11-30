@@ -8,11 +8,11 @@
       <?php include('sidebar.php'); ?>
     </div>
     <div class="span9">
-      <img src="../img/dr.jpg" class="img-rounded">
+      
       <?php include('navbar_dasboard.php') ?>
       <div class="alert alert-info">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong><i class="icon-user icon-large"></i>&nbsp;Schedule Table</strong>
+        <strong><i class="fas fa-user fa-lg"></i>&nbsp;Schedule Table</strong>
       </div>
       <!-- form sort -->
       <form method="POST" action="sort_date.php">

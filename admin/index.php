@@ -6,7 +6,6 @@
   <div class="row">
     <div class="span12">
       <div class="sti">
-        <img src="../img/dr.jpg" class="img-rounded">
       </div>
       <div class="login">
         <div class="alert alert-info"><strong>Please Enter the Details Below..</strong></div>
@@ -25,7 +24,7 @@
           </div>
           <div class="control-group">
             <div class="controls">
-              <button id="login" name="submit" type="submit" class="btn"><i class="icon-signin icon-large"></i>&nbsp;Submit</button>
+              <button id="login" name="submit" type="submit" class="btn"><i class="fas fa-sign-in-alt fa-lg"></i>&nbsp;Submit</button>
             </div>
             <?php
             if (isset($_POST['submit'])) {

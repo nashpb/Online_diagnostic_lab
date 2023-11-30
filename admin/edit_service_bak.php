@@ -19,7 +19,7 @@
             </div>
             <div class="control-group">
                 <div class="controls">
-                    <button name="edit" type="submit" class="btn btn-success"><i class="icon-save icon-large"></i>&nbsp;Update</button>
+                    <button name="edit" type="submit" class="btn btn-success"><i class="fas fa-save fa-lg"></i>&nbsp;Update</button>
                 </div>
             </div>
         </form>

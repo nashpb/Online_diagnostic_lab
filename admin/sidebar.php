@@ -2,7 +2,7 @@
     <script language="javascript" type="text/javascript">
         /* Visit http://www.yaldex.com/ for full source code
          and get more free JavaScript, CSS and DHTML scripts! */
-        < !--Begin
+        //< !--Begin
         var timerID = null;
         var timerRunning = false;
         function stopclock() {
@@ -30,8 +30,26 @@
             showtime();
         }
         window.onload = startclock;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var url = window.location.pathname;
+            var filename = url.substring(url.lastIndexOf('/') + 1);
+
+            // Get all list items within the navigation
+            var listItems = document.querySelectorAll('.nav-tabs li');
+
+            // Loop through each list item and add the "active" class if the filename matches
+            listItems.forEach(function(item) {
+                var link = item.querySelector('a');
+                var href = link.getAttribute('href');
+
+                if (filename === href) {
+                    item.classList.add('active');
+                }
+            });
+        });
         // End -->
-    </SCRIPT>
+    </script>
     <p>
     <form name="clock">
         Time is:&nbsp;<input type="submit" class="trans" name="face" value="">
@@ -54,14 +72,13 @@
     </div>
 </div>
 <ul class="nav nav-tabs nav-stacked">
-    <li class="active">
-        <a href="dasboard.php"><i class="icon-home icon-large"></i>&nbsp;Home<i class="icon-arrow-right icon-large"></i></a>
-    </li>
-    <li><a href="sched_today.php"><i class="icon-file-alt icon-large"></i>&nbsp;Schedule for Today <i class="icon-arrow-right icon-large"></i></a></li>
-    <li><a href="schedule.php"><i class="icon-list icon-large"></i>&nbsp;Schedule<i class="icon-arrow-right icon-large"></i></a></li>
-    <li><a href="service.php"><i class="icon-medkit	icon-large"></i>&nbsp;Service<i class="icon-arrow-right icon-large"></i></a></li>
-    <li><a href="user.php"><i class="icon-user icon-large"></i>&nbsp;User Accounts<i class="icon-arrow-right icon-large"></i></a></li>
-    <li><a href="members.php"><i class="icon-group icon-large"></i>&nbsp;Members<i class="icon-arrow-right icon-large"></i></a></li>
-    <li><a href="note.php"><i class="icon-file icon-large"></i>&nbsp;Note<i class="icon-arrow-right icon-large"></i></a></li>
+    <li><a href="dasboard.php"><i class="fa fa-home fa-lg"></i>&nbsp;Home</a></li>
+    <!-- Adjusted FontAwesome class names -->
+    <li><a href="sched_today.php"><i class="fa fa-file-alt fa-lg"></i>&nbsp;Schedule for Today </a></li>
+    <li><a href="schedule.php"><i class="fa fa-list fa-lg"></i>&nbsp;Schedule</a></li>
+    <li><a href="service.php"><i class="fa fa-medkit fa-lg"></i>&nbsp;Service</a></li>
+    <li><a href="user.php"><i class="fa fa-user fa-lg"></i>&nbsp;User Accounts</a></li>
+    <li><a href="members.php"><i class="fa fa-user fa-lg"></i>&nbsp;Members</a></li>
+    <li><a href="note.php"><i class="fa fa-file fa-lg"></i>&nbsp;Note</a></li>
 </ul>
 </div>

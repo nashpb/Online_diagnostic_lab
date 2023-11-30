@@ -9,7 +9,8 @@
         <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
         <link href="../css/bootstrap-responsive.css" rel="stylesheet" media="screen">
         <link href="../css/docs.css" rel="stylesheet" media="screen">
-        <link href="../css/font-awesome.css" rel="stylesheet" media="screen">
+        <!-- <link href="../css/font-awesome.css" rel="stylesheet" media="screen"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="../css/DT_bootstrap.css">
         <!-- js -->
         <script src="../js/jquery-1.7.2.min.js"></script>
@@ -18,17 +19,12 @@
         <script type="text/javascript" charset="utf-8" language="javascript" src="../js/DT_bootstrap.js"></script>
 
         <!--sa calendar-->
+        <script type="text/javascript" src="../js/lang/en.js"></script>
         <script type="text/javascript" src="../js/datepicker.js"></script>
         <link href="../css/datepicker.css" rel="stylesheet" type="text/css" />
         
         <!--pdf-->
         <script src="js/jspdf.min.js"></script>
-
-<style type="text/css">
-    body{
-        background-color: red;
-    }
-</style>
     </head>
     <?php include('dbcon.php'); ?>
-    <body bgcolor="red">
+    <body>

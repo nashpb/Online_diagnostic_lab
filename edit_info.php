@@ -21,17 +21,17 @@
                     $new = date('l, F d, Y', strtotime($Today));
                     echo $new;
                     ?>
-                </div>	
+                </div>
                 <div class="alert alert-info">Time Guide for Each Number</div>
-                <p>Number 1  - 9:30 - 10:00</p>
-                <p>Number 2  - 10:00 - 10:30</p>
-                <p>Number 3  - 10:30 - 11:00</p>
-                <p>Number 4  - 11:30 - 12:00</p>
-                <p>Number 5  - 12:30 - 1:00</p>
+                <p>Number 1 - 9:30 - 10:00</p>
+                <p>Number 2 - 10:00 - 10:30</p>
+                <p>Number 3 - 10:30 - 11:00</p>
+                <p>Number 4 - 11:30 - 12:00</p>
+                <p>Number 5 - 12:30 - 1:00</p>
 
-                <p>Number 6  - 3:00 - 3:30</p>
-                <p>Number 7  - 3:30 - 4:00</p>
-                <p>Number 8  - 4:30 - 5:00</p>
+                <p>Number 6 - 3:00 - 3:30</p>
+                <p>Number 7 - 3:30 - 4:00</p>
+                <p>Number 8 - 4:30 - 5:00</p>
 
 
 
@@ -40,8 +40,11 @@
                 <p>Saturday(half day)</p>
                 <p>Saturday(half day)</p>
                 <p>(9:30 pm to 1:00 pm)</p>
-                <p>349 Kopanong Section</p>
-                <p>Thembisa</p>
+                <p>123, Random Street,
+                    XYZ Layout,
+                    Bangalore - 5600XX,
+                    Karnataka, India.
+                </p>
 
 
 
@@ -49,63 +52,73 @@
                 <div class="alert alert-info">Testimonial</div>
                 <div class="testimonial_div">
                     <p>
-                        I was delighted with the treatment. Despite me being a somewhat difficult patient Dr. Makoti was really gentle, patient and understanding.
-                        The treatment was explained precisely to me and the price was quoted right at the beginning which is exactly what the price was at the end.
-                        The transformation to my life in general has been amazing. 
+                        I was delighted with the treatment. Despite me being a somewhat difficult patient Dr. Makoti was
+                        really gentle, patient and understanding.
+                        The treatment was explained precisely to me and the price was quoted right at the beginning
+                        which is exactly what the price was at the end.
+                        The transformation to my life in general has been amazing.
                         I am extremely happy with the quality of the treatment.
                     </p>
-                </div>		
+                </div>
             </div>
             <div class="span6">
 
 
                 <div class="alert alert-info">Edit Personal Information</div>
                 <?php
-                $member_query = mysqli_query($con,"select * from members where member_id='$session_id'")or die(mysql_error());
-                $member_row = mysqli_fetch_array($member_query,MYSQLI_BOTH);
+                $member_query = mysqli_query($con, "select * from members where member_id='$session_id'") or die(mysql_error());
+                $member_row = mysqli_fetch_array($member_query, MYSQLI_BOTH);
                 ?>
                 <form class="form-horizontal" method="POST">
                     <div class="control-group">
                         <label class="control-label" for="inputEmail">Firstname</label>
                         <div class="controls">
-                            <input type="text" value="<?php echo $member_row['firstname']; ?>" name="firstname" id="inputEmail" placeholder="Firstname" required>
+                            <input type="text" value="<?php echo $member_row['firstname']; ?>" name="firstname"
+                                id="inputEmail" placeholder="Firstname" required>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputPassword">Lastname</label>
                         <div class="controls">
-                            <input type="text" name="lastname" id="inputPassword" placeholder="Lastname" value="<?php echo $member_row['lastname']; ?>" required>
+                            <input type="text" name="lastname" id="inputPassword" placeholder="Lastname"
+                                value="<?php echo $member_row['lastname']; ?>" required>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputPassword">Middlename</label>
                         <div class="controls">
-                            <input type="text" name="middlename" id="inputPassword" value="<?php echo $member_row['middlename']; ?>" placeholder="Middlename" required>
+                            <input type="text" name="middlename" id="inputPassword"
+                                value="<?php echo $member_row['middlename']; ?>" placeholder="Middlename" required>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputPassword">Address</label>
                         <div class="controls">
-                            <input type="text" name="address" value="<?php echo $member_row['address']; ?>" id="inputPassword" placeholder="Address" required>
+                            <input type="text" name="address" value="<?php echo $member_row['address']; ?>"
+                                id="inputPassword" placeholder="Address" required>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputPassword">Email</label>
                         <div class="controls">
-                            <input type="text" name="email" id="inputPassword" value="<?php echo $member_row['email']; ?>" placeholder="Email" required>
+                            <input type="text" name="email" id="inputPassword"
+                                value="<?php echo $member_row['email']; ?>" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputPassword">Age</label>
                         <div class="controls">
-                            <input type="text" name="age" class="span1" value="<?php echo $member_row['age']; ?>" id="inputPassword" placeholder="Age" required>
+                            <input type="text" name="age" class="span1" value="<?php echo $member_row['age']; ?>"
+                                id="inputPassword" placeholder="Age" required>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputPassword">Gender</label>
                         <div class="controls">
                             <select class="span2" name="gender" required>
-                                <option><?php echo $member_row['gender']; ?></option>
+                                <option>
+                                    <?php echo $member_row['gender']; ?>
+                                </option>
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>
@@ -113,8 +126,11 @@
                     </div>
                     <div class="control-group">
                         <div class="controls">
-                            <button type="submit" name="update" class="btn btn-success"><i class="icon-pencil"></i>&nbsp;Update</button>
-                            <button type="reset" name="back" class="btn btn-danger" onclick="location.href = 'dasboard.php';"><i class="icon-pencil"></i>&nbsp;Cancel</button>
+                            <button type="submit" name="update" class="btn btn-success"><i
+                                    class="icon-pencil"></i>&nbsp;Update</button>
+                            <button type="reset" name="back" class="btn btn-danger"
+                                onclick="location.href = 'dasboard.php';"><i
+                                    class="icon-pencil"></i>&nbsp;Cancel</button>
                         </div>
                     </div>
                 </form>
@@ -129,7 +145,7 @@
                     $gender = $_POST['gender'];
                     $email = $_POST['email'];
 
-                    mysqli_query($con,"update members set firstname='$firstname' , lastname='$lastname' , middlename='$middlename' , address='$address' ,
+                    mysqli_query($con, "update members set firstname='$firstname' , lastname='$lastname' , middlename='$middlename' , address='$address' ,
 	age='$age' , gender='$gender' , email='$email' where member_id='$session_id' ") or die(mysql_error());
                     ?>
                     <script>
@@ -148,17 +164,21 @@
                 <img src="img/32x32/twitter.png">
                 <img src="img/32x32/rss.png">
                 <ul class="nav nav-list">
-                    <div class="alert alert-danger"><li class="nav-header">NOTE</li></div>
+                    <div class="alert alert-danger">
+                        <li class="nav-header">NOTE</li>
+                    </div>
 
 
                     <?php
-                    $note_query = mysqli_query($con,"select * from note ")or die(mysql_error());
+                    $note_query = mysqli_query($con, "select * from note ") or die(mysql_error());
                     $note_count = mysqli_num_rows($note_query);
-                    while ($note_row = mysqli_fetch_array($note_query,MYSQLI_BOTH	)) {
+                    while ($note_row = mysqli_fetch_array($note_query, MYSQLI_BOTH)) {
                         if ($note_count > 0) {
                             ?>
 
-                            <li><i class="icon-stop icon-large"></i>&nbsp;<?php echo $note_row['message'] ?></li>
+                            <li><i class="icon-stop icon-large"></i>&nbsp;
+                                <?php echo $note_row['message'] ?>
+                            </li>
                             <?php
                         }
                     }
@@ -173,26 +193,30 @@
                     <thead>
                         <tr>
                             <th>Service Offer</th>
-                            <th>Price</th>                                 
+                            <th>Price</th>
 
                         </tr>
                     </thead>
                     <tbody>
 
                         <?php
-                        $user_query = mysqli_query($con,"select * from service")or die(mysql_error());
-                        while ($row = mysqli_fetch_array($user_query,MYSQLI_BOTH)) {
+                        $user_query = mysqli_query($con, "select * from service") or die(mysql_error());
+                        while ($row = mysqli_fetch_array($user_query, MYSQLI_BOTH)) {
                             $id = $row['service_id'];
                             ?>
                             <tr class="del<?php echo $id ?>">
-                                <td><?php echo $row['service_offer']; ?></td> 
-                                <td><?php echo $row['price']; ?></td>                         
-<?php } ?>
+                                <td>
+                                    <?php echo $row['service_offer']; ?>
+                                </td>
+                                <td>
+                                    <?php echo $row['price']; ?>
+                                </td>
+                            <?php } ?>
 
                     </tbody>
                 </table>
-                <div class="alert alert-info">Dr. Matsatsi A. Makoti</div>	
-                <img  class="img img-polaroid" src="images/c.jpg">
+                <div class="alert alert-info">Dr. Matsatsi A. Makoti</div>
+                <img class="img img-polaroid" src="images/c.jpg">
             </div>
 
         </div>

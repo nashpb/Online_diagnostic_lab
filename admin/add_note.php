@@ -12,7 +12,7 @@
             </div>
             <div class="control-group">
                 <div class="controls">
-                    <button name="submit" type="submit" class="btn btn-success"><i class="icon-save icon-large"></i>&nbsp;Save</button>
+                    <button name="submit" type="submit" class="btn btn-success"><i class="fas fa-save fa-lg"></i>&nbsp;Save</button>
                 </div>
             </div>
         </form>

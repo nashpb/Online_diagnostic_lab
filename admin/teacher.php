@@ -21,7 +21,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered" id="example">
                     <div class="alert alert-info">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        <strong><i class="icon-user icon-large"></i>&nbsp;Teachers Table</strong>
+                        <strong><i class="fas fa-user fa-lg"></i>&nbsp;Teachers Table</strong>
                     </div>
                     <thead>
                         <tr>
